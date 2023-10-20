@@ -1,0 +1,280 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+body {
+    background-color: #451952;
+}
+
+
+p {
+    font-size: 17px;
+}
+
+/*HEADER*/
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F39F5A;
+    font-family: Arial;
+    padding: 5px;
+    margin: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    align-items: center;
+}
+
+header h1 {
+    display: inline-block;
+    padding: 15px;
+    line-height: 50px;
+    font-weight: bold;
+    text-align: right;
+}
+
+nav, li, a {
+    color: #eeeeee;
+    display: inline-block;
+    line-height: 82px;
+    font-size: 17px;
+    margin-right: 8px;
+}
+
+header nav {
+    display: none;
+}
+
+nav a:hover {
+    color: rgb(236, 52, 19);
+}
+
+/*MENU AÑAÑAÑAÑA*/
+
+
+
+/*CENTRO*/
+
+.a{
+    color: #AE445A;    
+}
+.seccion-1{
+    width: 100%;
+    height: 282px;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text{
+   
+
+    margin-right: 170px;
+}
+
+.textoimg{
+    display: flex;
+    flex-direction: row; 
+    justify-content: right;
+
+}
+
+
+
+
+main {
+    background-color: #662549;
+    margin: 89px;
+    padding: 8px;
+    height: 100%;
+    text-align: center;
+}
+
+.parrafo-1 {
+    padding: 12px;
+}
+
+.parrafo-2 {
+    padding: 10px 10px;
+}
+
+.parrafo-1, .parrafo-2 {
+    font-size: 22px;
+}
+
+.seccion-1, .seccion-2 {
+    background-color: #AE445A;
+}
+
+article {
+    background-color: #79155B;
+}
+
+aside h1 {
+    font-size: xx-large;
+    color: #AE445A;
+}
+
+aside h2 {
+    font-size: 31px;
+    padding: 10px;
+    color: #AE445A;
+}
+
+aside p {
+    padding: 0;
+}
+
+aside {
+    background-color: #451952;
+    padding: 0;
+}
+
+aside div p a {
+    color: #A459D1;
+}
+
+.display-1 {
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*FORMULARIOS*/
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: #8B1874;
+    padding: 20px;
+    margin: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+#contacto ul li a {
+    color: #eeeeee;
+}
+
+
+/* IMAGENES*/
+
+.imagen1 {
+    width: 400px;
+    height: 300px;
+    position: relative;
+}
+
+.imagen2 {
+    width: 600px;
+    height: 300px;
+    position: relative;
+}
+
+.imagen4, .imagen3 {
+    width: 350px;
+    height: 580px;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+
+.fuente-clara {
+    color: #eeeeee;
+}
+
+.fuente-clara p {
+    font-size: 30px;
+}
+
+.fuente-oscura {
+    color: #22211f;
+}
+
+.fuente-acento {
+    color: #b59a61;
+}
+
+.fuente-oscura, ol li b {
+    font-size: 27px;
+    padding: 3px;
+}
+
+
+/*media queries*/
+
+@media (max-width: 768px) {
+    header {
+        background-color: #662549;
+    }
+
+    header nav ul li a {
+        margin-right: 0;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    #encabezado ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #79155B;
+        text-align: center;
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+
+
+    .textoimg{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #check:checked ~ ul {
+        left: 0%;
+        display: block;
+    }
+
+    #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 50px;
+    }
+
+    .display-1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .imagen2 {
+        width: 100%;
+    }
+
+    footer {
+        position: absolute;
+    }
+
+
+
+}
